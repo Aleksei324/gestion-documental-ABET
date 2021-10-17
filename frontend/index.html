@@ -8,28 +8,99 @@
 
     <!-- index.css -->
     <link rel="stylesheet" href="./styles/index.css">
+
+    <!-- FontAwsome -->
+    <script src="https://use.fontawesome.com/4c7c7b9492.js"></script>
 </head>
 <body>
+    <!-- Creación de asignatura -->
+    <div class="crear-asignatura">
+        <div>
+          <h3>Creación de asignatura</h3>  
+          <i class="fa fa-times"></i>
+        </div>
+
+        <form class="formularioCrearAsignatura">
+            <input type="text" name="nombreCurso" id="nombreCurso" placeholder="Nombre del curso (Obligatorio)" /><br>
+            <input type="text" name="so" id="so" placeholder="SO a evaluar (Obligatorio)" /><br>
+            <input type="text" name="periodo" id="periodo" placeholder="Periodo académico (Obligatorio)" /><br>
+
+            <button>Crear</button>
+        </form>
+    </div>
+
+
     <!--  Menú lateral -->
     <nav class="side-menu">
-        <h4>UAO Accreditation</h4>
+        <div>
+            <img src="./imgs/UAO-ACCREDITATION.svg" alt="Logo UAO-ACCREDITATION" />
+        </div>        
         <ul>
-            <li><a href="#">Andrés Chapman</a></li>
-            <li><a href="#">Asignaturas</a></li>
-            <li><a href="#">Grupos</a></li>
-            <li><a href="#">Mensajes</a></li>
-            <li><a href="#">Reportes</a></li>
+            <li>
+                <a href="#">
+                    <div>
+                        <img src="./imgs/libros-educativos.png" />
+                        &emsp;
+                        <span>Andrés Chapman</span>
+                    </div>
+                    <img class="flecha" src="./imgs/flecha.png" />
+                </a>
+            </li>
+
+            <li>
+                <a href="">
+                    <div>
+                        <img src="./imgs/libros-educativos.png" />
+                        &emsp;
+                        <span>Asignaturas</span>
+                    </div>
+                    <img class="flecha" src="./imgs/flecha.png" />
+                </a>
+            </li>
+
+            <li>
+                <a href="">
+                    <div>
+                        <img src="./imgs/grupos.png" />
+                        &emsp;
+                        <span>Grupos</span>
+                    </div>
+                    <img class="flecha" src="./imgs/flecha.png" />
+                </a>
+            </li>
+
+            <li>
+                <a href="">
+                    <div>
+                        <img src="./imgs/mensajes.png" />
+                        &emsp;
+                        <span>Mensajes</span>
+                    </div>
+                    <img class="flecha" src="./imgs/flecha.png" />
+                </a>
+            </li>
+
+            <li>
+                <a href="">
+                    <div>
+                        <img src="./imgs/reportes.png" />
+                        &emsp;
+                        <span>Reportes</span>
+                    </div>
+                    <img class="flecha" src="./imgs/flecha.png" />
+                </a>
+            </li>
         </ul>
     </nav>
     
     <header>
         <!-- Titulo o información de la página actual (Ej: Asignaturas) -->
-        <h4>Asignaturas</h4>
+        <h6>Asignaturas</h6>
 
-        <i></i>
-        <i></i>
+        <div class="notificacion"></div>
+
+        <img class="usuario" src="./imgs/usuario.png" />
     </header>
-
 
     <!-- Sección principal -->
     <section>
@@ -39,24 +110,8 @@
     <!-- JQuery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     
-    <script>
-        $(document).ready(() => {
-            alert('ESTÁ FUNCIONANDO');
-
-            $.get('http://localhost:3000/docentes', data => {
-                console.log(data);
-            });
-            
-
-                // $.ajax({
-                //     url: 'localhost:3000/docentes',
-                //     method: 'GET',
-                //     success: data => console.log(data),
-                //     fail: err => console.log(err)
-                // })
-            }
-        );
-    </script>
+    <!--  index.js -->
+    <script src="./js/index.js"></script>
 
 </body>
 </html>
