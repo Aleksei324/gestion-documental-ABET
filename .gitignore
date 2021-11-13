@@ -2,3 +2,9 @@
 # de Juan Diego
 /frontend
 frontend/
+frontend
+./frontend
+frontend/*
+frontend/.
+\frontend
+
