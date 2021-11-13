@@ -13,81 +13,64 @@
     <script src="https://use.fontawesome.com/4c7c7b9492.js"></script>
 </head>
 <body>
-    <!-- Creación de asignatura -->
-    <div class="crear-asignatura">
-        <div>
-          <h3>Creación de asignatura</h3>  
-          <i class="fa fa-times"></i>
-        </div>
-
-        <form class="formularioCrearAsignatura">
-            <input type="text" name="nombreCurso" id="nombreCurso" placeholder="Nombre del curso (Obligatorio)" /><br>
-            <input type="text" name="so" id="so" placeholder="SO a evaluar (Obligatorio)" /><br>
-            <input type="text" name="periodo" id="periodo" placeholder="Periodo académico (Obligatorio)" /><br>
-
-            <button>Crear</button>
-        </form>
-    </div>
-
-
     <!--  Menú lateral -->
     <nav class="side-menu">
         <div>
-            <img src="./imgs/UAO-ACCREDITATION.svg" alt="Logo UAO-ACCREDITATION" />
+            <img src="./imgs/uao-accreditation-blanco.svg" alt="Logo UAO-ACCREDITATION" />
         </div>        
         <ul>
             <li>
                 <a href="#">
                     <div>
-                        <img src="./imgs/libros-educativos.png" />
+                        <img src="./imgs/libros-educativos.png" alt="Icono libros"/>
                         &emsp;
                         <span>Andrés Chapman</span>
                     </div>
-                    <img class="flecha" src="./imgs/flecha.png" />
+                    <img class="flecha" src="./imgs/flecha.png" alt="Icono flecha" />
                 </a>
             </li>
 
             <li>
                 <a href="">
                     <div>
-                        <img src="./imgs/libros-educativos.png" />
+                        <img src="./imgs/libros-educativos.png" alt="Icono libros" />
                         &emsp;
                         <span>Asignaturas</span>
                     </div>
-                    <img class="flecha" src="./imgs/flecha.png" />
+                    <img class="flecha" src="./imgs/flecha.png" alt="Icono flecha" />
                 </a>
             </li>
 
             <li>
                 <a href="">
                     <div>
-                        <img src="./imgs/grupos.png" />
+                        <img src="./imgs/grupos.png" alt="Icono grupos" />
                         &emsp;
                         <span>Grupos</span>
                     </div>
-                    <img class="flecha" src="./imgs/flecha.png" />
+                    <img class="flecha" src="./imgs/flecha.png" alt="Icono flecha"/>
                 </a>
             </li>
 
             <li>
                 <a href="">
                     <div>
-                        <img src="./imgs/mensajes.png" />
+                        <img src="./imgs/mensajes.png" alt="Icono mensajes"/>
                         &emsp;
                         <span>Mensajes</span>
                     </div>
-                    <img class="flecha" src="./imgs/flecha.png" />
+                    <img class="flecha" src="./imgs/flecha.png" alt="Icono flecha"/>
                 </a>
             </li>
 
             <li>
                 <a href="">
                     <div>
-                        <img src="./imgs/reportes.png" />
+                        <img src="./imgs/reportes.png" alt="Icono reportes"/>
                         &emsp;
                         <span>Reportes</span>
                     </div>
-                    <img class="flecha" src="./imgs/flecha.png" />
+                    <img class="flecha" src="./imgs/flecha.png" alt="Icono flecha"/>
                 </a>
             </li>
         </ul>
@@ -100,11 +83,81 @@
         <div class="notificacion"></div>
 
         <img class="usuario" src="./imgs/usuario.png" />
+
     </header>
+
+    <!-- Menú debajo del Header -->
+    <!-- Para filtrar, crear asignaturas, etc. -->
+    <!-- <div class="menu-opciones">
+        <ul>
+            <li>
+
+            </li>
+
+            <li>
+
+            </li>
+
+            <li>
+
+            </li>
+
+            <li>
+
+            </li>
+        </ul>
+        
+        <button></button>
+    </div> -->
+
+    <!-- Contenedor de fondo para crear asignatura -->
+    <div class="contenedor-crear-asignatura">
+        <!-- Ventana para crear asignatura -->
+        <div class="crear-asignatura">
+            <h3>Crear asignaturas</h3>  
+    
+            <form class="formularioCrearAsignatura">
+                <div>
+                    <label for="nombreAsignatura">Nombre asignatura<span>*</span></label>
+                    <input type="text" name="nombreAsignatura" id="nombreAsignatura" />
+                </div>
+
+                <div>
+                    <label for="creditosAsignatura">Número de créditos<span>*</span></label>
+                    <input type="number" name="creditosAsignatura" id="creditosAsignatura" />
+                </div>
+
+                <div>
+                    <label for="programaAsignatura">Programa académico<span>*</span></label>
+                    <input type="text" name="programaAsignatura" id="programaAsignatura" />
+                </div>
+
+                <div>
+                    <label for="codigoAsignatura">Código de la asignatura<span>*</span></label>
+                    <input type="text" name="codigoAsignatura" id="codigoAsignatura" />
+                </div>
+            </form>
+
+            <div class="contenedor-botones-crear-asignatura">
+                <button class="boton-cancelar-asignatura">Cancelar</button>
+                <button class="boton-guardar-asignatura">Guardar</button>
+            </div>
+        </div>
+    </div>
 
     <!-- Sección principal -->
     <section>
+        <!-- Cuadro de diálogo de cerrar sesión -->
+        <div class="container-cerrar-sesion">
+            <div>
+                <a href=""><i class="fa fa-sign-out"></i> Cerrar sesión</a>
+            </div>
 
+            <ul>
+                <li>Políticas de privacidad</li>
+                <li>Términos y condiciones</li>
+            </ul>
+        </div>
     </section>
 
     <!-- JQuery -->
