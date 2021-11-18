@@ -17,7 +17,9 @@
   },
   "homepage": "https://github.com/CamiloFrancoMoya/gestion-documental-ABET#readme",
   "dependencies": {
+    "cookie-parser": "^1.4.6",
     "cors": "^2.8.5",
+    "csurf": "^1.11.0",
     "express": "^4.17.1",
     "mysql": "^2.18.1"
   }

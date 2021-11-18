@@ -3,9 +3,12 @@ const express = require('express');
 const app = express();
 const cors = require('cors');
 const mysql = require('mysql');
+const cookieParser = require("cookie-parser");
 
 // Middlewares
+app.use(express.urlencoded({ extended: false }))
 app.use(cors());
+app.use(cookieParser());
 
 // DB
 const con = mysql.createConnection({
